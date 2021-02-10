@@ -1,8 +1,9 @@
-# DTLDephos- Deep Transfer Learning based approach to predict dephosphorylation sites
+# 
+DTL-DephosphoSite- Deep Transfer Learning based approach to predict dephosphorylation sites
 
-DTLDephos is a transfer learning based approach employing deep learning to predict dephosphorylation sites of S,T and Y.
+DTL-DephosphoSite is a transfer learning based approach employing deep learning to predict dephosphorylation sites of S,T and Y.
 
-DTLDephos is a deep learning based method for Dephosphorylation sites of S,T and Y. It utilizes phosphorylation data through transfer learning method to address prediction to present scarce dephosphorylation data.It is implemented using Keras (version 2.2.4) and Tensorflow (version 1.15) backend and has been tested on both in Windows and Linux OS.
+DTL-DephosphoSite is a deep learning based method for Dephosphorylation sites of S,T and Y. It utilizes phosphorylation data through transfer learning method to address prediction to present scarce dephosphorylation data.It is implemented using Keras (version 2.2.4) and Tensorflow (version 1.15) backend and has been tested on both in Windows and Linux OS.
  
 
 
@@ -35,7 +36,7 @@ Independent Testing code is provided. The model provided can be used to predict 
   - In linux code will be, $python3 test_model.py
   
   # Prediction for your dataset
-  If you would like to use DTLDephos to predict dephosphorylation sites in the protein of your interest, you should prepare your dataset in the same format as the test dataset which is basically a FASTA format. This model works for window size 31 only, meaning for the residue of your interest you should provide 25 resiudes downstream and 25 residues upstream. e.g. if you want to predict whether the target residue(S/T/Y) in Position 735 in protein Q4KWH8 is dephosphorylated or not, the input file should contain 16 residues upstream of the target residue (position 735 in protein Q4KWH8) and 16 residues downstream of the target residue.
+  If you would like to use DTL-DephosphoSite to predict dephosphorylation sites in the protein of your interest, you should prepare your dataset in the same format as the test dataset which is basically a FASTA format. This model works for window size 31 only, meaning for the residue of your interest you should provide 25 resiudes downstream and 25 residues upstream. e.g. if you want to predict whether the target residue(S/T/Y) in Position 735 in protein Q4KWH8 is dephosphorylated or not, the input file should contain 16 residues upstream of the target residue (position 735 in protein Q4KWH8) and 16 residues downstream of the target residue.
 
 The general format for your dataset should be:
 
